@@ -76,3 +76,57 @@ button:hover {
     height: 40px;
     margin-right: 20px;
 }
+/* Media Queries для адаптации под мобильные устройства */
+@media (max-width: 768px) { /* Для планшетов и небольших экранов */
+    
+    .title {
+        font-size: 3em; /* Уменьшение размера шрифта заголовка */
+        margin-bottom: 15px; /* Корректировка отступа снизу */
+    }
+
+    .container {
+        padding: 15px; /* Уменьшение отступов контейнера */
+        border-radius: 10px; /* Уменьшение радиуса скругления углов */
+    }
+
+    input[type="text"] {
+        width: calc(100% - 30px); /* Полная ширина с учетом отступов */
+        font-size: 1em; /* Уменьшение размера шрифта для ввода */
+        padding: 10px; /* Уменьшение внутреннего отступа */
+        border-radius: 15px; /* Корректировка радиуса скругления углов поля ввода */
+        margin-right: 10px;
+    }
+    button {display: none;}
+   
+
+
+
+   
+    
+     .ytm,
+     .github,
+     .ai {
+         height:auto; /* Авто высота для иконок при адаптации */ 
+         margin-right:auto; 
+     }
+}
+
+/* Дополнительные медиа-запросы для более мелких экранов (например, телефоны) */
+@media (max-width: 480px) { /* Для мобильных телефонов */
+
+  
+button {display: none;}
+  
+.ytm{
+    height: 80px;
+}
+.github{
+    height: 70px;
+    margin-right: 20px;
+}
+.ai{
+    height: 30px;
+    margin-right: 20px;
+}
+    
+}
