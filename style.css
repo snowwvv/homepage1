@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://sun9-16.userapi.com/s/v1/ig2/k5HtSZ585e3mxB4nzADqxcEqHowTwK0knRjitP0tLkFEGoAEGQEtVmIAKfribevquvf-ZNqX9pKCh22SYBooVBOK.jpg?quality=96&as=32x25,48x37,72x56,108x84,160x125,240x187,360x280,480x374,540x420,640x498,720x560,1080x841,1200x934&from=bu&u=4axpzwSMOjGVA7biJFkicl9GBozUfVY4Lu1KRQW0E4I&cs=807x628');
+    background-size: cover; /* Заполнение фона */
+    background-position: center; /* Центрирование фона */
+    background-repeat: no-repeat; /* Без повторения */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота экрана */
+}
+
+.container {
+    text-align: center;
+    
+    padding: 20px; /* Отступы вокруг содержимого */
+    border-radius: 15px; /* Скругление углов контейнера */
+}
+
+.title {
+    font-size: 4em; /* Увеличенный размер шрифта */
+    color: transparent; /* Делаем текст прозрачным для эффекта градиента */
+    background: linear-gradient(45deg, #ffffff, #d1e6f2, #ffffff); /* Градиент цвета снега */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    background-clip: text; /* Обрезаем фон по тексту */
+    animation: shimmer 3s infinite; /* Анимация переливания */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 15px; /* Увеличение внутреннего отступа */
+    font-size: 1.2em; /* Увеличение размера шрифта */
+    width: 400px; /* Ширина поля ввода */
+    border: none; /* Убираем рамку */
+    border-radius: 25px; /* Скругление углов поля ввода */
+}
+
+button {
+    padding: 15px 20px; /* Увеличение внутреннего отступа кнопки */
+    font-size: 1.2em; /* Увеличение размера шрифта кнопки */
+    background-color: #3498db; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку у кнопки */
+    border-radius: 25px; /* Скругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+button:hover {
+    background-color: #2980b9; /* Цвет кнопки при наведении */
+}
