@@ -65,3 +65,10 @@ button {
 button:hover {
     background-color: #2980b9; /* Цвет кнопки при наведении */
 }
+.ytm{
+    height: 100px;
+}
+.github{
+    height: 80px;
+    margin-right: 50px;
+}
