@@ -98,9 +98,7 @@ button:hover {
     }
     button {display: none;}
    
-body{
-   height: 140vh;
-}
+
 
 
    
@@ -129,9 +127,6 @@ button {display: none;}
 .ai{
     height: 30px;
     margin-right: 20px;
-}
-    body{
-   height: 140vh;
 }
     
 }
