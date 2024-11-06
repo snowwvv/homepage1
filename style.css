@@ -76,6 +76,17 @@ button:hover {
     height: 40px;
     margin-right: 20px;
 }
+.popa{
+    margin-top: 500px;
+    display: flex;
+    width: 1510px; 
+    height: 750px;
+    position: absolute;
+    margin-left: -1045px;
+}
+
+
+
 /* Media Queries для адаптации под мобильные устройства */
 @media (max-width: 768px) { /* Для планшетов и небольших экранов */
     
