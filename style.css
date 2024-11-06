@@ -47,17 +47,19 @@ input[type="text"] {
     font-size: 1.2em; /* Увеличение размера шрифта */
     width: 400px; /* Ширина поля ввода */
     border: none; /* Убираем рамку */
-    border-radius: 25px; /* Скругление углов поля ввода */
+    border-radius: 25px 25px 25px 25px; /* Скругление углов поля ввода */
 }
 
 button {
-    padding: 15px 20px; /* Увеличение внутреннего отступа кнопки */
-    font-size: 1.2em; /* Увеличение размера шрифта кнопки */
-    background-color: #3498db; /* Цвет кнопки */
-    color: white; /* Цвет текста кнопки */
-    border: none; /* Убираем рамку у кнопки */
-    border-radius: 25px; /* Скругление углов кнопки */
-    cursor: pointer; /* Указатель при наведении */
+   
+ padding: 0px; /* Увеличение внутреннего отступа */
+    font-size: 2.5em; /* Увеличение размера шрифта */
+    width: 1px; /* Ширина поля ввода */
+    height: 1px;
+    border: none; /* Убираем рамку */
+    border-radius: 0px 25px 25px 0px; /* Скругление углов поля ввода */
+   margin-left: -43px;
+   background-color: white;
 }
 
 button:hover {
