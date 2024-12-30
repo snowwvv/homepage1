@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://sun9-16.userapi.com/s/v1/ig2/k5HtSZ585e3mxB4nzADqxcEqHowTwK0knRjitP0tLkFEGoAEGQEtVmIAKfribevquvf-ZNqX9pKCh22SYBooVBOK.jpg?quality=96&as=32x25,48x37,72x56,108x84,160x125,240x187,360x280,480x374,540x420,640x498,720x560,1080x841,1200x934&from=bu&u=4axpzwSMOjGVA7biJFkicl9GBozUfVY4Lu1KRQW0E4I&cs=807x628');
+    background-image: url('https://sun9-29.userapi.com/impg/fDSLFbcqrP0lL-a0sBH_ek6LUjZUs1Q7lOIwgA/b9SsxNexeCQ.jpg?size=2077x1200&quality=96&sign=a322a66b2ce5a34644cf84d0bb363e98&type=album');
     background-size: cover; /* Заполнение фона */
     background-position: center; /* Центрирование фона */
     background-repeat: no-repeat; /* Без повторения */
@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Высота экрана */
+
 }
 
 .container {
@@ -27,6 +28,9 @@ body {
     background-clip: text; /* Обрезаем фон по тексту */
     animation: shimmer 3s infinite; /* Анимация переливания */
     margin-bottom: 20px; /* Отступ снизу */
+    font-family: 'Brush Script MT', 'Verdana', sans-serif;
+       font-style: italic;
+  
 }
 
 @keyframes shimmer {
@@ -136,4 +140,59 @@ button {display: none;}
     margin-right: 20px;
 }
     
+}
+
+
+
+body {
+    transition: background 0.3s ease;
+}
+
+body.dark-theme {
+    background-image: url('https://sun9-16.userapi.com/s/v1/ig2/k5HtSZ585e3mxB4nzADqxcEqHowTwK0knRjitP0tLkFEGoAEGQEtVmIAKfribevquvf-ZNqX9pKCh22SYBooVBOK.jpg?quality=96&as=32x25,48x37,72x56,108x84,160x125,240x187,360x280,480x374,540x420,640x498,720x560,1080x841,1200x934&from=bu&u=4axpzwSMOjGVA7biJFkicl9GBozUfVY4Lu1KRQW0E4I&cs=807x628') !important;
+    background-color: #121212 !important;
+    color: white;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-switch-checkbox {
+    display: none;
+}
+
+.theme-switch-label {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.theme-switch-inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.theme-switch-switch {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-label .theme-switch-switch {
+    transform: translateX(30px);
+    background-color: #fff;
 }
